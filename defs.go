@@ -7,10 +7,10 @@ import (
 )
 
 type ServiceT struct {
-   // end point para monitoracao
+   // end point for monitoring
    ping    bool `method:"GET" path:"/ping" ok:"Test for service availability/operation"`
 
-   // end point para monitoracao
+   // end point for monitoring
    stop    bool `method:"GET" path:"/stop" ok:"Ends service operation"`
 
    botId  string
