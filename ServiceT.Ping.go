@@ -6,7 +6,7 @@ import (
    "github.com/luisfurquim/stonelizard"
 )
 
-func Ping() stonelizard.Response {
+func (svc ServiceT) Ping() stonelizard.Response {
    Goose.Logf(2,"Ping received")
    return stonelizard.Response{
       Status: http.StatusOK,
