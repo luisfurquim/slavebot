@@ -9,8 +9,7 @@ import (
 func (svc ServiceT) Ping() stonelizard.Response {
    Goose.Logf(2,"Ping received")
    return stonelizard.Response{
-      Status: http.StatusOK,
-      Body: "OK",
+      Status: http.StatusNoContent,
    }
 
 }
