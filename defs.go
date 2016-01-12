@@ -2,7 +2,6 @@ package slavebot
 
 
 import (
-   "errors"
    "github.com/luisfurquim/goose"
    "github.com/luisfurquim/stonelizard"
 )
@@ -19,7 +18,4 @@ type ServiceT struct {
    onStop func()
 }
 
-
-var config []byte
-var ErrRecvConfig = errors.New("Error receiving configuration from Master Bot")
 var Goose goose.Alert

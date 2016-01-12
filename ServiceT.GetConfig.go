@@ -1,9 +1,9 @@
 package slavebot
 
 import (
-   "io"
+   "github.com/luisfurquim/stonelizard"
 )
 
-func (svc ServiceT) GetConfig() (io.Reader, error) {
-   return ConfigReader(), nil
+func (svc ServiceT) GetConfig() (stonelizard.Shaper, error) {
+   return nil, nil
 }
