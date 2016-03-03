@@ -18,4 +18,7 @@ type ServiceT struct {
    onStop func()
 }
 
-var Goose goose.Alert
+var Goose struct {
+   Stop goose.Alert
+   Ping goose.Alert
+}

@@ -18,7 +18,7 @@ func (svc ServiceT) Stop() stonelizard.Response {
       svc.onStop()
    })()
 
-   Goose.Logf(2,"Stopping " + svc.botId + " bot")
+   Goose.Stop.Logf(2,"Stopping " + svc.botId + " bot")
 
    return stonelizard.Response{
       Status: http.StatusNoContent,
