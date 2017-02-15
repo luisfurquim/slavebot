@@ -18,7 +18,9 @@ type ServiceT struct {
    onStop func()
 }
 
-var Goose struct {
+type SlavebotG struct {
    Stop goose.Alert
    Ping goose.Alert
 }
+
+var Goose SlavebotG
